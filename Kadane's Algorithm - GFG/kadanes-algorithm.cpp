@@ -17,9 +17,8 @@ class Solution{
         
         for(int i=1;i<n;i++)
         {
-            if(currsum<0)
-            currsum=0;
-            currsum=currsum+arr[i];
+            
+            currsum=max(currsum+arr[i],arr[i]);
             
             maxsum=max(currsum,maxsum);
         }
